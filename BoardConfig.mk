@@ -5,9 +5,9 @@
 #
 
 # Inherit from the proprietary version
-include vendor/xiaomi/garnet-miuicamera/BoardConfigVendor.mk
+include vendor/xiaomi/tapas-miuicamera/BoardConfigVendor.mk
 
-MIUICAMERA_PATH := device/xiaomi/garnet-miuicamera
+MIUICAMERA_PATH := device/xiaomi/tapas-miuicamera
 
 # Properties
 TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/system.prop

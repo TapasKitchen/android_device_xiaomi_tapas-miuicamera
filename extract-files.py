@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/garnet-miuicamera',
+    'device/xiaomi/tapas-miuicamera',
 ]
 
 
@@ -42,7 +42,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'garnet-miuicamera',
+    'tapas-miuicamera',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
