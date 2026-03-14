@@ -1,0 +1,15 @@
+diff -urN MiuiCamera_patch1/smali/com/android/camera/l3.smali MiuiCamera_patch1_modified/smali/com/android/camera/l3.smali
+--- MiuiCamera_patch1/smali/com/android/camera/l3.smali	2026-03-14 08:20:01.346598005 +0000
++++ MiuiCamera_patch1_modified/smali/com/android/camera/l3.smali	2026-03-14 08:26:16.154027947 +0000
+@@ -1055,6 +1055,11 @@
+ 
+     invoke-virtual {p0, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+ 
++    # FLAG_ACTIVITY_NEW_TASK
++    const v0, 0x10000000
++
++    invoke-virtual {p0, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
++
+     invoke-virtual {p1, p0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+ 
+     invoke-virtual {p1}, Lcom/android/camera/ActivityBase;->ri()Z

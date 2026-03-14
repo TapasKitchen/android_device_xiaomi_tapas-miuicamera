@@ -1,0 +1,33 @@
+diff -urN MiuiCamera_patch1/smali/com/android/camera/a6.smali MiuiCamera_patch1_modified/smali/com/android/camera/a6.smali
+--- MiuiCamera_patch1/smali/com/android/camera/a6.smali	2026-03-14 08:16:43.915258304 +0000
++++ MiuiCamera_patch1_modified/smali/com/android/camera/a6.smali	2026-03-14 08:19:30.806414334 +0000
+@@ -193,7 +193,7 @@
+ 
+ .field public static d1:J = 0x0L
+ 
+-.field public static final e:Ljava/lang/String; = "com.android.camera.action.REVIEW"
++.field public static final e:Ljava/lang/String; = "android.provider.action.REVIEW"
+ 
+ .field public static final e0:I = 0x8c36
+ 
+diff -urN MiuiCamera_patch1/smali/com/android/camera/l3.smali MiuiCamera_patch1_modified/smali/com/android/camera/l3.smali
+--- MiuiCamera_patch1/smali/com/android/camera/l3.smali	2026-03-14 08:16:43.935189168 +0000
++++ MiuiCamera_patch1_modified/smali/com/android/camera/l3.smali	2026-03-14 08:20:01.346598005 +0000
+@@ -1090,7 +1090,7 @@
+ 
+     move-result p0
+ 
+-    const-string v0, "com.android.camera.action.REVIEW"
++    const-string v0, "android.provider.action.REVIEW"
+ 
+     if-eqz p0, :cond_0
+ 
+@@ -1151,7 +1151,7 @@
+ 
+     const-string p1, "GalleryHelper"
+ 
+-    const-string v1, "gotoGallery: com.android.camera.action.REVIEW"
++    const-string v1, "gotoGallery: android.provider.action.REVIEW"
+ 
+     invoke-static {p1, v1, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+ 
